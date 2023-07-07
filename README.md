@@ -1,4 +1,4 @@
-# Microservices with Kafka and Nest.js
+# 💬 Microservices with Kafka and Nest.js
 
 This repository contains a microservices project built with Nest.js, utilizing Kafka for event-driven communication between services. 
 
@@ -83,6 +83,8 @@ To run the microservices locally, follow these steps:
 ## Debugging
 
 Microservices listening to Kafka containers:
+
+> Important: users will need make sure microservices in docker-compose.yml are on the same network as Kafka
 
 Note that if users want to run the microservices locally without Docker, they will need to replace the current broker internal advertised listener `kafka:29092` with the external listener `localhost:9092`.
 
