@@ -90,3 +90,7 @@ Note that if users want to run the microservices locally without Docker, they wi
 
 Setup references:
 https://stackoverflow.com/questions/58188820/cant-connect-to-kafka-docker-container-from-another-docker-container
+
+## Acknowledgement
+
+Hats off to <a href="https://github.com/mguay22">Michael Guay</a> for the amazing tutorial.
