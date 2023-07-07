@@ -1,0 +1,31 @@
+version: '3'
+services:
+  api-gateway:
+    networks:
+      - kafka-kafdrop_default
+    build:
+      context: ./api-gateway
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    depends_on:
+      - billing
+      - auth
+  billing:
+    networks:
+      - kafka-kafdrop_default
+    build:
+      context: ./billing
+      dockerfile: Dockerfile
+    depends_on:
+      - auth
+  auth:
+    networks:
+      - kafka-kafdrop_default
+    build:
+      context: ./auth
+      dockerfile: Dockerfile
+
+networks:
+  kafka-kafdrop_default:
+    external: true

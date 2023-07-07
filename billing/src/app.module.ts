@@ -12,7 +12,7 @@ import { AppService } from './app.service'
                 options: {
                     client: {
                         clientId: `auth`,
-                        brokers: [`localhost:9092`],
+                        brokers: [`kafka:29092`],
                     },
                     consumer: {
                         groupId: `auth-consumer`,
